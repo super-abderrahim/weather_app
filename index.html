@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="./Weather icon.jfif" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="global-container">
+            <div class="container1">
+                <h1>The Weather</h1>
+                <div class="informations">
+                    <p id="temperature">X°C</p>
+                    <p id="city">city</p>
+
+                </div>
+            </div>
+
+            <div class="container2">
+                <div class="search">
+                    <input type="text" id="location" placeholder="Enter Your Location" utocomplete="off">
+                    <button id="btn"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#F0615E" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg> </button>
+                </div>
+                <div class="error">this location doesn't exist</div>
+                <div class="weather-details">
+                    <h3>Weather Details:</h3>
+                    <p  >Cloudy <span id="cloud">none</span></p>
+                    <p >Humudity <span id="Humudity">00%</span></p>
+                    <p >Wind <span id="Wind">00 Kmh</span></p>
+                </div>
+            </div>
+
+    </div>
+    <script src="./index.js"></script> 
+</body>
+</html>
